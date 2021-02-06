@@ -1,0 +1,31 @@
+{
+    "Action": [
+        [
+            {"LOWER": "make"}
+        ],
+        [
+            {"LOWER": "change"}
+        ]
+    ],
+    "Graph": [
+        [
+            {"POS": "NOUN"}, 
+            {"LOWER": "graph"}
+        ]
+    ],
+    "Cell": [
+        [
+            {"LOWER": "cell"}, 
+            {"POS": {"IN": ["NOUN", "PROPN"]}}
+        ]
+    ],
+    "Range": [
+        [
+            {"LOWER": "range"}, 
+            {"LOWER": "from"}, 
+            {"POS": {"IN": ["NOUN", "PROPN"]}}, 
+            {"LOWER": "to"},  
+            {"POS": {"IN": ["NOUN", "PROPN"]}}
+        ]
+    ]
+}
