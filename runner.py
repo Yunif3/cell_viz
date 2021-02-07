@@ -10,7 +10,7 @@ def run():
     while True:
         try:
             sentence = listener.listen()
-            # sentence = "make line graph using range from A1 to E4"
+            sentence = "make line graph with solid lines using range from A1 to D60"
             tags = tagger.match_rules(sentence)
             print(tags)
             process(tags)

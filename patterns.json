@@ -23,9 +23,9 @@
         [
             {"LOWER": "range"}, 
             {"LOWER": "from"}, 
-            {"POS": {"IN": ["NOUN", "PROPN"]}}, 
+            {"POS": {"IN": ["NOUN", "PROPN", "VERB", "NUM"]}}, 
             {"LOWER": "to"},  
-            {"POS": {"IN": ["NOUN", "PROPN"]}}
+            {"POS": {"IN": ["NOUN", "PROPN", "VERB", "NUM"]}}
         ]
     ],
     "Color": [
