@@ -5,7 +5,7 @@ import collections
 
 class Tagger():
     def __init__(self):
-        self.sp = spacy.load("en_core_web_md")
+        self.sp = spacy.load("en_core_web_sm")
         self.matcher = Matcher(self.sp.vocab)
         # add the patterns to extract
         with open("patterns.json", "r") as f:

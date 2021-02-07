@@ -6,6 +6,7 @@ def run():
     print("start")
     listener = Recog()
     tagger =  Tagger()
+    print("done setting up")
     sentence = listener.listen()
     # sentence = "make line graph using range from A1 to E4"
     tags = tagger.match_rules(sentence)
