@@ -27,5 +27,21 @@
             {"LOWER": "to"},  
             {"POS": {"IN": ["NOUN", "PROPN"]}}
         ]
+    ],
+    "Color": [
+        [{"LOWER": "Red"}],
+        [{"LOWER": "Orange"}],
+        [{"LOWER": "Yellow"}],
+        [{"LOWER": "Green"}],
+        [{"LOWER": "Blue"}],
+        [{"LOWER": "Cyan"}],
+        [{"LOWER": "Purple"}],
+        [{"LOWER": "White"}],
+        [{"LOWER": "Black"}],
+        [{"LOWER": "Brown"}]
+    ],
+    "LineStyle": [
+        [{"LOWER": "Dotted", "POS": "ADJ"}],
+        [{"LOWER": "Solid", "POS": "ADJ"}]
     ]
 }

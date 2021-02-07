@@ -10,6 +10,7 @@ class Recog():
     def listen(self):
         with self.mic as source:
             self.r.adjust_for_ambient_noise(source)
+            print("listening now")
             audio = self.r.listen(source)
             word = self.r.recognize_google(audio)
             return word

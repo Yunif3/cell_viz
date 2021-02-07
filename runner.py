@@ -7,11 +7,17 @@ def run():
     listener = Recog()
     tagger =  Tagger()
     print("done setting up")
-    sentence = listener.listen()
-    # sentence = "make line graph using range from A1 to E4"
-    tags = tagger.match_rules(sentence)
-    print(tags)
-    process(tags)
+    while True:
+        try:
+            sentence = listener.listen()
+            # sentence = "make line graph using range from A1 to E4"
+            tags = tagger.match_rules(sentence)
+            print(tags)
+            process(tags)
+        except KeyboardInterrupt:
+            break
+        except Exception as e:
+            continue
 
 
 if __name__ == "__main__":
