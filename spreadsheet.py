@@ -34,7 +34,7 @@ class Spreadsheet():
 
     
     def get_range(self, start, end):
-        cell_range = 'Class Data!A2:E'
+        cell_range = f"{start}:{end}"
         result = self.sheet.values().get(spreadsheetId = self.sheet_id, range = cell_range).execute()
         values = result.get("values", [])
         return values
